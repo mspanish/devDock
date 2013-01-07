@@ -1,0 +1,324 @@
+﻿; RawInputControlTest.ahk Control definition file.
+; Describ Control Settings in this file.
+; Lines beginning with a semicolon(;) are ignored as comments.
+
+; Sample file: TM2Control
+;   Copy TM2Control.exe to same folder
+; Drop this file into RawInputControlTest.ahk
+
+;############################### Window Settings ##############################
+
+; Background color of window.
+#Window:Color=241F21 ;333338
+; Default font color.
+#Window:FontColor=9B9B9B
+; Font color when button is pressed.
+#Window:ActiveFontColor=00C0FF
+#Window:TransColor=000001
+#Window:Docking=100
+
+; Specify Start-up window position by Left/Right/Top/Bottom. (alone or in combination)
+#Window:Pos=Bottom
+
+; You can also specify window position by the coordinate.
+#Window:X=0
+;#Window:Y=0
+
+; Window size (If not specified, window size will be set automatically.)
+#Window:Width=100
+;#Window:Height=550
+; Margin
+;#Window:MarginLeft=0
+#Window:MarginTop=0
+;#Window:MarginRight=0
+#Window:MarginBottom=0
+#Window:touchgate=0
+
+; Window transparency: Full transparent 0 ~ 255 Opaque
+#Window:Transparent=255
+
+;############################## Controls settings #############################
+
+;--------------------------------- Title bar ----------------------------------
+
+; Handle for moving the window. - Control-type: Handle
+#Control:Handle
+;	; Name the controls. You can use letters and numbers.
+	; Please take care to avoid overlap with other controls.
+	Name=Handle
+	; Specify Control`s position. [upper left X-coordinate, upper left Y-coordinate, Width, Height]
+	Pos=0, 0, 0, 0
+	; Specify the button's caption.
+;	Caption=- - -
+	; Specify Caption position. [X-coordinate, Y-coordinate]. You can also specify "Center".
+;	CaptionPos=Center, Center
+	; Specifies the image button is not pressed.
+;	Image1=img\n95x30.bmp
+	; Specifies the image button is pressed.
+;	Image2=img\n95x30a.bmp
+
+
+
+#ControlOffset:0, 0
+
+; Tool2 Button - Control type: Key
+
+#Control:Dock2
+	Name=menudock
+	Pos=0,0, 50, 50
+	Image1=img\b_ai.png
+	Image2=img\b_aiover.png
+
+; Tool2 Button - Control type: Key
+#Control:Toggletouch
+	Name=ToggleTouch
+	Pos=50, 0, 50, 50
+	Image1=img\b_touch.png
+	Image2=img\b_touchover.png
+;	DownSub=touchsub
+;	upSub=touchsub
+
+
+#ControlOffset:0, 50
+
+; Tool2 Button - Control type: Key
+#Control:Key
+	Name=save
+	caption=
+	Pos=0, 0, 50, 50
+	Image1=img\b_save.png
+	Image2=img\b_saveover.png
+	DownKey={Ctrl Down}{s Down}
+	UpKey={s Up}{Ctrl Up}
+
+; Close button. - Control type: Close
+#Control:Key
+	Name=Delete
+	Pos=50, 0, 50, 50del
+	Image1=img\b_del.png
+	Image2=img\b_delover.png
+	DownKey={Delete}
+
+#ControlOffset:0, 50
+
+; Tool2 Button - Control type: Key
+#Control:Key
+	Name=canvas
+	caption=
+	Pos=0, 0, 50, 50
+	Image1=img\b_canvas.png
+	Image2=img\b_canvasover.png
+	DownKey={Shift Down}{o Down}
+	UpKey={o Up}{Shift Up}
+
+#Control:Key
+	Name=front
+	Pos=50, 0, 50, 50
+	Image1=img\b_front.png
+	Image2=img\b_frontover.png
+	DownKey={Shift Down}{Ctrl Down}{] Down}
+	UpKey={] Up}{Ctrl Up}{Shift Up}
+
+; Tool2 Button - Control type: Key
+#Control:Key
+	Name=Undo
+	Pos=0, 50, 50, 50
+	Image1=img\b_undo.png
+	Image2=img\b_undoover.png
+	DownKey={Ctrl Down}{z Down}
+	UpKey={z Up}{Ctrl Up}
+
+
+#Control:Key
+	Name=Redo
+	Pos=50, 50, 50, 50
+	Image1=img\b_redo.png
+	Image2=img\b_redoover.png
+	DownKey={Ctrl Down}{Shift Down}{z Down}
+	UpKey={z Up}{Shift Up}{Ctrl Up}
+
+#ControlOffset:0, 100
+
+#Control:Key
+	Name=Copy
+	Pos=0, 0, 50, 50
+	Image1=img\b_copy.png
+	Image2=img\b_copyover.png
+	DownKey={Ctrl Down}{c Down}
+	UpKey={c Up}{Ctrl Up}
+
+
+#Control:Key
+	Name=Dupli
+	Pos=50, 0, 50, 50
+	Image1=img\b_dupli.png
+	Image2=img\b_dupliover.png
+	DownKey={Ctrl Down}{d Down}
+	UpKey={d Up}{Ctrl Up}
+
+; Tool2 Button - Control type: Key
+#Control:Key
+	Name=Paste
+	Pos=0, 50, 50, 50
+	Image1=img\b_paste.png
+	Image2=img\b_pasteover.png
+	DownKey={Ctrl Down}{Shift Down}{v Down}
+	UpKey={v Up}{Shift Up}{Ctrl Up}
+
+
+; Tool2 Button - Control type: Key
+#Control:Key
+	Name=group
+	Pos=50, 50, 50, 50
+	Image1=img\b_group.png
+	Image2=img\b_groupover.png
+	DownKey={Ctrl Down}{g Down}
+	UpKey={g Up}{Ctrl Up}
+
+
+;-------------------------------- Tools Button --------------------------------
+
+#ControlOffset:0, 100
+
+#Control:Key
+	Name=Pen
+	step=10
+	Pos=0, 0, 50, 50
+	Image1=img\b_pen.png
+	Image2=img\b_penover.png
+	DownKey={p Down}
+	UpKey={p Up}
+	TouchKey=
+
+
+#Control:Key
+	Name=Edit
+	Pos=50, 50, 50, 50
+	Image1=img\b_edit.png
+	Image2=img\b_editover.png
+	DownKey={a Down}
+	UpKey={a Up}
+
+
+#Control:Key
+	Name=select
+	Pos=0, 50, 50, 50
+	Image1=img\b_select.png
+	Image2=img\b_selectover.png
+	DownKey={v Down}
+	UpKey={v Up}
+
+
+#Control:Key
+	Name=pick
+	Pos=50, 0, 50, 50
+	Image1=img\b_pick.png
+	Image2=img\b_pickover.png
+	DownKey={i Down}
+	UpKey={i Up}
+
+#ControlOffset:0, 100
+
+; Space key - Control type: Key
+#Control:Key
+	Name=Space
+	Pos=30, 0, 70, 100
+	DownKey={Space Down}
+	UpKey={Space Up}
+	Image1=img\b_hand.png
+	Image2=img\b_handover.png
+
+; ZoomIn key - Control type: Key
+#Control:joystick
+	Name=Zoom
+	Pos=0, 0, 30, 100
+	step=10
+	DownKey={Ctrl Down}{NumpadSub Down}
+	DownUpKey={NumpadSub up}{Ctrl up}
+	UpKey={Ctrl Down}{NumpadAdd Down}
+	UpUpKey={NumpadAdd Up}{Ctrl Up}
+	touchKey={Ctrl Down}{0 Down}
+	touchupKey={0 Up}{Ctrl Up}
+	Image1=img\b_zoom.png
+	Image2=img\b_zoomover.png
+
+
+#ControlOffset:0, 100
+
+
+#Control:Key
+	Name=FlipColor
+	Pos=50, 0, 50, 50
+	Image1=img\b_flipcolors.png
+	Image2=img\b_flipcolorsover.png
+	DownKey={shift down}{x Down}
+	UpKey={x Up}{shift up}
+
+
+; Alt key - Control type: Key
+#Control:toggleKey
+	Name=Alt
+	Pos=0, 0, 50, 50
+	DownKey={Alt Down}
+	UpKey={Alt Up}
+	Image1=img\b_alt.png
+	Image2=img\b_altover.png
+
+#Control:toggleKey
+	Name=Ctrl
+	Pos=0, 50, 50, 50
+	Image1=img\b_ctl.png
+	Image2=img\b_ctlover.png
+	DownKey={Ctrl Down}
+	UpKey={Ctrl Up}
+
+
+#Control:toggleKey
+	Name=shift
+	Pos=0, 100, 50, 50
+	Image1=img\b_shift.png
+	Image2=img\b_shiftover.png
+	DownKey={Shift Down}
+	UpKey={Shift Up}
+
+
+#Control:Key
+	Name=flip
+	Pos=50, 50, 50, 50
+	Image1=img\b_flip.png
+	Image2=img\b_flipover.png
+	DownKey={o Down}
+	UpKey={o Up}
+
+
+#Control:joystick
+	Name=up
+	Pos=50, 100, 50, 50
+	Step=20
+	TouchKey={enter down}{enter up}
+	Upkey={up Down}{up Up}
+	Downkey={down Down}{down Up}
+	leftkey={left Down}{left Up}
+	rightkey={right Down}{right Up}
+	Image1=img\b_joys.png
+	Image2=img\b_joysover.png
+
+
+#ControlOffset:0, 150
+
+#Control:AppDock
+	Name=NumPad
+	Pos=50, 0, 50, 50
+	Image1=img\b_NumPad.png
+	Image2=img\b_NumPadover.png
+
+#Control:AppDock
+	Name=keyboard
+	Pos=0, 0, 50, 50
+	Image1=img\b_keyb.png
+	Image2=img\b_keybover.png
+
+
+
+
+

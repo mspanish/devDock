@@ -1,0 +1,167 @@
+<>;############################### Window Settings ##############################
+
+; Background color of window.
+#Window:Color=241F21
+; Default font color.
+#Window:FontColor=9B9B9B
+; Font color when button is pressed.
+#Window:ActiveFontColor=00C0FF
+ 
+#Window:Pos=LeftBottom
+; You can also specify window position by the coordinate.
+;#Window:X=0
+;#Window:Y=0
+
+; Window size (If not specified, window size will be set automatically.)
+#Window:Width=808
+#Window:Height=50
+; Margin
+;#Window:MarginLeft=0
+#Window:MarginTop=0
+;#Window:MarginRight=0
+#Window:MarginBottom=0
+
+
+
+; Window transparency: Full transparent 0 ~ 255 Opaque
+#Window:Transparent=150
+
+;############################## Controls settings #############################
+
+
+
+#ControlOffset:0, 0
+
+
+#Control:Key
+	Name=function
+	Pos=0, 0, 50, 50
+	Downkey=function() {{}  {}}
+	Upkey=
+	Image1=img\fn.png
+	Image2=img\pink\fn.png
+
+#Control:Key
+	Name=jqueryselect
+	Pos=50, 0, 50, 50
+	Downkey={$}('{#} ').
+	Upkey={} 
+	Image1=img\jquery.png
+	Image2=img\pink\jquery.png
+
+
+#Control:Key
+	Name=3
+	Pos=100, 0, 50, 50
+	Downkey=( )
+	Upkey=
+	Image1=img\parentheses.png
+	Image2=img\pink\parentheses.png
+
+#Control:Key
+	Name=4
+	Pos=150, 0, 50, 50
+	Downkey={{ } {}}
+	Upkey=
+	Image1=img\braces.png
+	Image2=img\pink\braces.png
+
+#Control:Key
+	Name=5
+	Pos=200, 0, 50, 50
+	Downkey=[ ]
+		Upkey=
+	Image1=img\sqbrackets.png
+	Image2=img\pink\sqbrackets.png
+
+#Control:Key
+	Name=ands
+	Pos=250, 0, 50, 50
+	Downkey=&&
+	Upkey=
+	Image1=img\ands.png
+	Image2=img\pink\ands.png
+
+#Control:Key
+	Name=pipes
+	Pos=300, 0, 50, 50
+	Downkey=||
+	Upkey=
+	Image1=img\pipes.png
+	Image2=img\pink\pipes.png
+
+#Control:Key
+	Name=twoequals
+	Pos=350, 0, 50, 50
+	Downkey={=}{=}
+	Upkey=
+	Image1=img\equals.png
+	Image2=img\pink\equals.png
+
+#Control:Key
+	Name=noequals
+	Pos=400, 0, 50, 50
+	Downkey={!}{=}
+	Upkey=
+	Image1=img\noequals.png
+	Image2=img\pink\noequals.png
+
+
+#Control:Key
+	Name=percent
+	Pos=450, 0, 50, 50
+	Downkey={%}
+	Upkey=
+	Image1=img\percent.png
+	Image2=img\pink\percent.png
+	
+	
+
+#Control:Key
+	Name=px
+	Pos=500, 0, 50, 50
+	Downkey=px
+	Upkey=
+	Image1=img\px.png
+	Image2=img\pink\px.png
+
+#Control:Key
+	Name=slash
+	Pos=550, 0, 50, 50
+	Downkey=/
+	Upkey=
+	Image1=img\slash.png
+	Image2=img\pink\slash.png
+
+	#Control:Key
+	Name=signs
+	Pos=600, 0, 50, 50
+	Downkey=< >
+	Upkey=
+	Image1=img\signs.png
+	Image2=img\pink\signs.png
+
+#Control:Key
+	Name=div
+	Pos=650, 0, 50, 50
+	Downkey=<div ></div>
+	Upkey=
+	Image1=img\div.png
+	Image2=img\yellowred\div.png
+
+#Control:Key
+	Name=class
+	Pos=700, 0, 50, 50
+	Downkey={.}	{{}
+	Upkey={}}
+	Image1=img\class.png
+	Image2=img\inverted\clas s.png	
+	
+
+#Control:Key
+	Name=comments
+	Pos=750, 0, 50, 50
+	Downkey=^c/* ^v */
+	Upkey=
+	Image1=img\comments.png
+	Image2=img\pink\comments.png

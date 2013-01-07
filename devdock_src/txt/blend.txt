@@ -1,0 +1,192 @@
+﻿; RawInputControlTest.ahk Control definition file.
+; Describ Control Settings in this file.
+; Lines beginning with a semicolon(;) are ignored as comments.
+
+; Sample file: TM2Control
+;   Copy TM2Control.exe to same folder
+; Drop this file into RawInputControlTest.ahk
+
+;############################### Window Settings ##############################
+
+; Background color of window.
+#Window:Color=241F21
+; Default font color.
+#Window:FontColor=9B9B9B
+; Font color when button is pressed.
+#Window:ActiveFontColor=00C0FF
+#Window:TransColor=000001
+#Window:Docking=0
+
+; Specify Start-up window position by Left/Right/Top/Bottom. (alone or in combination)
+#Window:Pos=RightTop
+; You can also specify window position by the coordinate.
+;#Window:X=0
+;#Window:Y=0
+
+; Window size (If not specified, window size will be set automatically.)
+#Window:Width=50
+;#Window:Height=508
+; Margin
+;#Window:MarginLeft=0
+#Window:MarginTop=0
+;#Window:MarginRight=0
+#Window:MarginBottom=0
+
+
+; Window transparency: Full transparent 0 ~ 255 Opaque
+#Window:Transparent=150
+;255
+
+;############################## Controls settings #############################
+
+;--------------------------------- Title bar ----------------------------------
+
+; Handle for moving the window. - Control-type: Handle
+#Control:Handle
+;	; Name the controls. You can use letters and numbers.
+	; Please take care to avoid overlap with other controls.
+	Name=Handle
+	; Specify Control`s position. [upper left X-coordinate, upper left Y-coordinate, Width, Height]
+	Pos=0, 0, 0, 0
+	; Specify the button's caption.
+;	Caption=- - -
+	; Specify Caption position. [X-coordinate, Y-coordinate]. You can also specify "Center".
+;	CaptionPos=Center, Center
+	; Specifies the image button is not pressed.
+;	Image1=img\n95x30.bmp
+	; Specifies the image button is pressed.
+;	Image2=img\green\n95x30a.bmp
+; Min Dock
+
+#ControlOffset:0, 0
+
+
+;#Control:Dock2
+;	Name=menudock
+;	Pos=0, 0, 50, 50
+;	Image1=img\b_win.png
+;	Image2=img\green\b_winover.png
+;App:photoshop.exe
+;	Name=photoshop
+;App:illustrator.exe
+;	Name=illustrator
+;App:blend.exe
+;	Name=blend
+
+
+; Tool1 Button - Control type: Key
+#Control:Key
+	Name=find
+	caption=
+	Pos=0, 0, 50, 50
+	Image1=img\find.png
+	Image2=img\green\find.png
+	DownKey={Ctrl Down}{f Down}
+	UpKey={f Up}{Ctrl Up}
+
+#ControlOffset:0, 50
+
+; Tool2 Button - Control type: Key
+#Control:Key
+	Name=interactive
+	caption=
+	Pos=0, 0, 50, 50
+	Image1=img\interactive.png
+	Image2=img\green\interactive.png
+	DownKey={Ctrl Down}{Alt Down}{i Down}
+	UpKey={i Up}{Alt Up}{Ctrl Up}
+
+
+
+	
+; Tool2 Button - Control type: Key
+#Control:Key
+	Name=refresh
+	caption=
+	Pos=0, 50, 50, 50
+	Image1=img\refresh.png
+	Image2=img\green\refresh.png
+	DownKey={Ctrl Down}{r Down}
+	UpKey={r Up}{Ctrl Up}
+	
+#ControlOffset:0, 100
+
+; Tool2 Button - Control type: Key
+#Control:Key
+	Name=codeview
+	caption=
+	Pos=0, 0, 50, 50
+	Image1=img\codeview.png
+	Image2=img\green\codeview.png
+	DownKey={F11}
+
+; Tool2 Button - Control type: Key
+#Control:Key
+	Name=save
+	caption=
+	Pos=0, 50, 50, 50
+	Image1=img\save.png
+	Image2=img\green\save.png
+	DownKey={Ctrl Down}{s Down}
+	UpKey={s Up}{Ctrl Up}	
+	
+; Tool2 Button - Control type: Key
+#Control:Key
+	Name=Undo
+	Pos=0, 100, 50, 50
+	Image1=img\undo.png
+	Image2=img\green\undo.png
+	DownKey={Ctrl Down}{z Down}
+	UpKey={z Up}{Ctrl Up}
+
+;#ControlOffset:0, 150
+
+; Tool2 Button - Control type: Key
+;#Control:Key
+;	Name=Copy
+;	Pos=0, 0, 50, 50
+;	Image1=img\copy.png
+;	Image2=img\green\copy.png
+;	DownKey={ctrl down}{c down}
+;	UpKey={c up}{ctrl up}
+
+; Tool2 Button - Control type: Key
+;#Control:Key
+;	Name=Paste
+;	Pos=0, 50, 50, 50
+;	Image1=img\b_paste.png
+;	Image2=img\green\b_pasteover.png
+;	DownKey=^v
+;	UpKey=
+
+
+
+
+#ControlOffset:0, 150
+
+#Control:Key
+	Name=Retr
+	Caption=
+	Pos=0, 0, 50, 50
+	Image1=img\backspace.png
+	Image2=img\green\backspace.png
+	DownKey={backspace down}
+	UpKey={backspace up}
+
+
+#Control:Key
+	Name=Enter
+	Caption=
+	Pos=0, 50, 50, 50
+	Image1=img\enter.png
+	Image2=img\green\enter.png
+	DownKey={enter down}
+	UpKey={enter up}
+
+
+;#Control:AppDock
+;	Name=keyboard
+;	Pos=0, 100, 50, 50
+;	Image1=img\b_keyb.png
+;	Image2=img\green\b_keybover.png
+

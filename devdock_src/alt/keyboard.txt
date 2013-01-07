@@ -1,0 +1,494 @@
+﻿;############################### Window Settings ##############################
+
+; Background color of window.
+#Window:Color=241F21
+; Default font color.
+#Window:FontColor=9B9B9B
+; Font color when button is pressed.
+#Window:ActiveFontColor=00C0FF
+
+; Specify Start-up window position by Left/Right/Top/Bottom. (alone or in combination)
+#Window:Pos=leftautov
+; You can also specify window position by the coordinate.
+;#Window:X=0
+;#Window:Y=220
+
+; Window size (If not specified, window size will be set automatically.)
+;#Window:Width=50
+#Window:Height=2808
+#Window:Height=280
+; Margin
+;#Window:MarginLeft=0
+;#Window:MarginTop=50
+;#Window:MarginRight=0
+;#Window:MarginBottom=50
+
+; Window transparency: Full transparent 0 ~ 255 Opaque
+#Window:Transparent=255
+
+;############################## Controls settings #############################
+
+
+#ControlOffset:0, 0 ;----------------- Row 1 -------------------
+
+; Handle for moving the window. - Control-type: Handle
+#Control:Handle
+	Name=Handle
+	Pos=0, 0, 520, 20
+	Image1=..\img\b_handlenum.png
+	Image2=..\img\b_handlenumover.png
+
+
+; Close Button
+#Control:Close
+	Name=Close
+	Pos=520, 0, 30, 20
+	Image1=..\img\b_close.png
+	Image2=..\img\b_closeover.png
+			
+; #ControlOffset:0, 30 ;----------------- ROW 2 -------------------
+; programming keyboard
+;#Control:zoom
+	;Name=careta
+	;Pos=0, 0, 550, 50
+	;zoom=2
+	;Align=center
+;	Image1=..\img\k_zoom.png
+
+#ControlOffset:0,72 ;----------x------- ROW 3 -------------------
+
+#Control:Key
+	Name=esc
+	Pos=0, 0, 50, 50
+	Downkey={tab}
+	Upkey=
+	Image1=..\img\k_esc.png
+	Image2=..\img\k_escover.png
+
+
+#ControlOffset:0, 0
+
+#Control:Key
+	Name=q
+	Pos=50, 0, 50, 50
+	Downkey=q
+	Upkey=
+	Image1=..\img\k_q.png
+	Image2=..\img\k_qover.png
+
+#Control:Key
+	Name=w
+	Pos=100, 0, 50, 50
+	Downkey=w
+	Upkey=
+	Image1=..\img\k_w.png
+	Image2=..\img\k_wover.png
+
+#Control:Key
+	Name=e
+	Pos=150, 0, 50, 50
+	Downkey=e
+	Upkey=
+	Image1=..\img\k_e.png
+	Image2=..\img\k_eover.png
+
+
+#Control:Key
+	Name=r
+	Pos=200, 0, 50, 50
+	Downkey=r
+	Upkey=
+	Image1=..\img\k_r.png
+	Image2=..\img\k_rover.png
+
+#Control:Key
+	Name=t
+	Pos=250, 0, 50, 50
+	Downkey=t
+	Upkey=
+	Image1=..\img\k_t.png
+	Image2=..\img\k_tover.png
+
+#Control:Key
+	Name=y
+	Pos=300, 0, 50, 50
+	Downkey=y
+	Upkey=
+	Image1=..\img\k_y.png
+	Image2=..\img\k_yover.png
+
+#Control:Key
+	Name=u
+	Pos=350, 0, 50, 50
+	Downkey=u
+	Upkey=
+	Image1=..\img\k_u.png
+	Image2=..\img\k_uover.png
+
+#Control:Key
+	Name=i
+	Pos=400, 0, 50, 50
+	Downkey=i
+	Upkey=
+	Image1=..\img\k_i.png
+	Image2=..\img\k_iover.png
+
+#Control:Key
+	Name=o
+	Pos=450, 0, 50, 50
+	Downkey=o
+	Upkey=
+	Image1=..\img\k_o.png
+	Image2=..\img\k_oover.png
+
+#Control:Key
+	Name=p
+	Pos=500, 0, 50, 50
+	Downkey=p
+	Upkey=
+	Image1=..\img\k_p.png
+	Image2=..\img\k_pover.png
+
+
+
+
+#ControlOffset:0, 50 ;----------------- ROW 4 -------------------
+
+
+#Control:Key
+	Name=block
+	Pos=0, 0, 65, 50
+	Downkey={tab}
+	Upkey=
+	Image1=..\img\k_tab2.png
+	Image2=..\img\k_tab2over.png
+
+
+#ControlOffset:15, 0
+
+#Control:Key
+	Name=a
+	Pos=50, 0, 50, 50
+	Downkey=a
+	Upkey=
+	Image1=..\img\k_a.png
+	Image2=..\img\k_aover.png
+
+#Control:Key
+	Name=s
+	Pos=100, 0, 50, 50
+	Downkey=s
+	Upkey=
+	Image1=..\img\k_s.png
+	Image2=..\img\k_sover.png
+
+#Control:Key
+	Name=d
+	Pos=150, 0, 50, 50
+	Downkey=d
+	Upkey=
+	Image1=..\img\k_d.png
+	Image2=..\img\k_dover.png
+
+
+#Control:Key
+	Name=f
+	Pos=200, 0, 50, 50
+	Downkey=f
+	Upkey=
+	Image1=..\img\k_f.png
+	Image2=..\img\k_fover.png
+
+#Control:Key
+	Name=g
+	Pos=250, 0, 50, 50
+	Downkey=g
+	Upkey=
+	Image1=..\img\k_g.png
+	Image2=..\img\k_gove.png
+
+#Control:Key
+	Name=h
+	Pos=300, 0, 50, 50
+	Downkey=h
+	Upkey=
+	Image1=..\img\k_h.png
+	Image2=..\img\k_hover.png
+
+#Control:Key
+	Name=j
+	Pos=350, 0, 50, 50
+	Downkey=j
+	Upkey=
+	Image1=..\img\k_j.png
+	Image2=..\img\k_jover.png
+
+#Control:Key
+	Name=k
+	Pos=400, 0, 50, 50
+	Downkey=k
+	Upkey=
+	Image1=..\img\k_k.png
+	Image2=..\img\k_kover.png
+
+#Control:Key
+	Name=l
+	Pos=450, 0, 50, 50
+	Downkey=l
+	Upkey=
+	Image1=..\img\k_l.png
+	Image2=..\img\k_lover.png
+
+
+#Control:Key
+	Name=keyboard2
+	Pos=500, 0, 35, 50
+	Downkey=^c/* ^v */
+	Upkey=
+	Image1=..\img\k_switch.png
+	Image2=..\img\k_switchover.png
+
+
+#ControlOffset: 0,0
+
+
+#Control:joystick
+	Name=up
+	Pos=465, 50, 70, 100
+	Step=20
+	TouchKey={enter down}{enter up}
+	Touchsub=ExitSub
+	Upkey={up Down}{up Up}
+	Downkey={down Down}{down Up}
+	leftkey={left Down}{left Up}
+	rightkey={right Down}{right Up}
+	Image1=..\img\k_enter.png
+	Image2=..\img\k_enterover.png
+
+
+
+
+#ControlOffset:0, 50 ;----------------- ROW 5 -------------------
+
+
+#ControlOffset:-15, 0
+
+
+#Control:toggleKey
+	Name=shift
+	Pos=0, 0, 80, 50
+	Downkey={shift down}
+	Upkey={shift up}
+	Image1=..\img\k_shift.png
+	Image2=..\img\k_shiftover.png
+
+#ControlOffset:30, 0
+
+#Control:Key
+	Name=z
+	Pos=50, 0, 50, 50
+	Downkey=z
+	Upkey=
+	Image1=..\img\k_z.png
+	Image2=..\img\k_zover.png
+
+#Control:Key
+	Name=x
+	Pos=100, 0, 50, 50
+	Downkey=x
+	Upkey=
+	Image1=..\img\k_x.png
+	Image2=..\img\k_xover.png
+
+#Control:Key
+	Name=c
+	Pos=150, 0, 50, 50
+	Downkey=c
+	Upkey=
+	Image1=..\img\k_c.png
+	Image2=..\img\k_cover.png
+
+
+#Control:Key
+	Name=v
+	Pos=200, 0, 50, 50
+	Downkey=v
+	Upkey=
+	Image1=..\img\k_v.png
+	Image2=..\img\k_vover.png
+
+#Control:Key
+	Name=b
+	Pos=250, 0, 50, 50
+	Downkey=b
+	Upkey=
+	Image1=..\img\k_b.png
+	Image2=..\img\k_bover.png
+
+#Control:Key
+	Name=n
+	Pos=300, 0, 50, 50
+	Downkey=n
+	Upkey=
+	Image1=..\img\k_n.png
+	Image2=..\img\k_nover.png
+
+#Control:Key
+	Name=m
+	Pos=350, 0, 50, 50
+	Downkey=m
+	Upkey=
+	Image1=..\img\k_m.png
+	Image2=..\img\k_mover.png
+
+#Control:Key
+	Name=slash
+	Pos=400, 0, 50, 50
+	Downkey={/}
+	Upkey=
+	Image1=..\img\k_slash.png
+	Image2=..\img\k_slashover.png
+
+
+
+#ControlOffset:-30, 50 ;----------------- ROW 6 ------------------
+
+#Control:toggleKey
+	Name=ctrl
+	Pos=0, 0, 50, 50
+	Downkey={ctrl down}
+	Upkey={ctrl up}
+	Image1=..\img\b_ctl.png
+	Image2=..\img\b_ctlover.png
+
+
+#Control:toggleKey
+	Name=alt
+	Pos=50, 0, 50, 50
+	Downkey={alt down}
+	Upkey={alt up}
+	Image1=..\img\b_alt.png
+	Image2=..\img\b_altover.png
+'.
+#Control:Key
+	Name=space
+	Pos=100, 0, 280, 50
+	Downkey={space}
+	Upkey=
+	Image1=..\img\k_space.png
+	Image2=..\img\k_spaceover.png
+
+#Control:Key
+	Name=comma
+	Pos=380, 0, 50, 50
+	Downkey={'}
+	Upkey=
+	Image1=..\img\k_coma.png
+	Image2=..\img\k_comaover.png
+#Control:Key
+	Name=dot
+	Pos=430, 0, 50, 50
+	Downkey={.}
+	Upkey=
+	Image1=..\img\k_dot.png
+	Image2=..\img\k_dotover.png
+
+;numpad---------------------
+function() {
+
+#ControlOffset:0,-200
+
+#Control:Key
+	Name=function
+	Pos=0, 0, 50, 50
+	Downkey=function() {{}  {}}
+	Upkey=
+	Image1=..\img\k_f.png
+	Image2=..\img\k_fover.png
+
+#Control:Key
+	Name=jqueryselect
+	Pos=50, 0, 50, 50
+	Downkey={$}('{#} ').
+	Upkey={} 
+	Image1=..\img\jquery.png
+	Image2=..\img\k_2over.png
+
+#Control:Key
+	Name=3
+	Pos=100, 0, 50, 50
+	Downkey=()
+	Upkey=
+	Image1=..\img\parentheses.png
+	Image2=..\img\k_3over.png
+[]
+#Control:Key
+	Name=4
+	Pos=150, 0, 50, 50
+	Downkey={{}{}}
+	Upkey=
+	Image1=..\img\bbrackets.png
+	Image2=..\img\b_brushover.png
+
+#Control:Key
+	Name=5
+	Pos=200, 0, 50, 50
+	Downkey=[]
+		Upkey=
+	Image1=..\img\sqbrackets.png
+	Image2=..\img\k_5over.png
+
+#Control:Key
+	Name=ands
+	Pos=250, 0, 50, 50
+	Downkey=&&
+	Upkey=
+	Image1=..\img\ands.png
+	Image2=..\img\k_6over.png
+
+#Control:Key
+	Name=pipes
+	Pos=300, 0, 50, 50
+	Downkey=||
+	Upkey=
+	Image1=..\img\pipes.png
+	Image2=..\img\k_7over.png
+
+#Control:Key
+	Name=twoequals
+	Pos=350, 0, 50, 50
+	Downkey={=}{=}
+	Upkey=
+	Image1=..\img\equals.png
+	Image2=..\img\k_8over.png
+
+#Control:Key
+	Name=noequals
+	Pos=400, 0, 50, 50
+	Downkey={!}{=}
+	Upkey=
+	Image1=..\img\noequals.png
+	Image2=..\img\k_9over.png
+
+
+#Control:Key
+	Name=percent
+	Pos=450, 0, 50, 50
+	Downkey={%}
+	Upkey=
+	Image1=..\img\percent.png
+	Image2=..\img\k_0bover.png
+
+
+#Control:Key
+	Name=BackSpace2
+	Pos=500, 0, 50, 50
+	Downkey={Backspace}
+	Upkey=
+	Image1=..\img\b_bck.png
+	Image2=..\img\b_bckover.png
+
+
+
+
+

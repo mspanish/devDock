@@ -1,0 +1,183 @@
+﻿;############################### Window Settings ##############################
+
+; Background color of window.
+#Window:Color=241F21
+; Default font color.
+#Window:FontColor=9B9B9B
+; Font color when button is pressed.
+#Window:ActiveFontColor=00C0FF
+
+; Specify Start-up window position by Left/Right/Top/Bottom. (alone or in combination)
+#Window:Pos=leftcenter
+; You can also specify window position by the coordinate.
+;#Window:X=0
+;#Window:Y=230
+
+; Window size (If not specified, window size will be set automatically.)
+;#Window:Width=50
+#Window:Height=285
+; Margin
+;#Window:MarginLeft=0
+;#Window:MarginTop=0
+;#Window:MarginRight=0
+;Window:MarginBottom=10
+
+; Window transparency: Full transparent 0 ~ 255 Opaque
+#Window:Transparent=255
+
+;############################## Controls settings #############################
+
+
+#ControlOffset:0, 0 ;----------------- Row 1 -------------------
+
+; Handle for moving the window. - Control-type: Handle
+#Control:Handle
+	Name=Handle
+	Pos=0, 0, 170, 30
+	Image1=..\img\k_handlenum.png
+	Image2=..\img\k_handlenumover.png
+
+
+; Close Button
+#Control:Close
+	Name=Close
+	Pos=170, 0, 30, 30
+	Image1=..\img\k_close.png
+	Image2=..\img\k_closeover.png
+
+#ControlOffset:0, 30 ;----------------- ROW 2 -------------------
+
+#Control:zoom
+	Name=careta
+	Pos=0, 0, 200, 50
+	zoom=2
+	Align=right
+	Image1=..\img\k_zoom.png
+
+#ControlOffset:0, 50
+
+#Control:Key
+	Name=1
+	Pos=0, 0, 50, 50
+	Downkey=1
+	Upkey=
+	Image1=..\img\k_1.png
+	Image2=..\img\k_1over.png
+
+#Control:Key
+	Name=2
+	Pos=50, 0, 50, 50
+	Downkey=2
+	Upkey=
+	Image1=..\img\k_2.png
+	Image2=..\img\k_2over.png
+
+#Control:Key
+	Name=3
+	Pos=100, 0, 50, 50
+	Downkey=3
+	Upkey=
+	Image1=..\img\k_3.png
+	Image2=..\img\k_3over.png
+
+#Control:Key
+	Name=tab
+	Pos=150, 0, 50, 50
+	Downkey={tab}
+	Upkey=
+	Image1=..\img\k_tab.png
+	Image2=..\img\k_tab.png
+
+#Control:Key
+	Name=BackSpace
+	Pos=150, 50, 50, 50
+	Downkey={Backspace}
+	Upkey=
+	Image1=..\img\k_bck.png
+	Image2=..\img\k_bck.png
+
+#ControlOffset:0, 50 ;----------------- ROW 3 -------------------
+
+#Control:Key
+	Name=4
+	Pos=0, 0, 50, 50
+	Downkey=4
+	Upkey=
+	Image1=..\img\k_4.png
+	Image2=..\img\k_4over.png
+
+#Control:Key
+	Name=5
+	Pos=50, 0, 50, 50
+	Downkey=5
+	Upkey=
+	Image1=..\img\k_5.png
+	Image2=..\img\k_5over.png
+
+#Control:Key
+	Name=6
+	Pos=100, 0, 50, 50
+	Downkey=6
+	Upkey=
+	Image1=..\img\k_6.png
+	Image2=..\img\k_6over.png
+
+#ControlOffset:0, 50 ;----------------- ROW 4 -------------------
+
+#Control:Key
+	Name=7
+	Pos=0, 0, 50, 50
+	Downkey=7
+	Upkey=
+	Image1=..\img\k_7.png
+	Image2=..\img\k_7over.png
+
+#Control:Key
+	Name=8
+	Pos=50, 0, 50, 50
+	Downkey=8
+	Upkey=
+	Image1=..\img\k_8.png
+	Image2=..\img\k_8over.png
+
+#Control:Key
+	Name=9
+	Pos=100, 0, 50, 50
+	Downkey=9
+	Upkey=
+	Image1=..\img\k_9.png
+	Image2=..\img\k_9over.png
+
+
+#Control:joystick
+	Name=Enter
+	Pos=150, 0, 50, 100
+	Step=20
+	TouchKey={enter down}{enter up}
+	Touchsub=ExitSub
+	Upkey={up Down}{up Up}
+	Downkey={down Down}{down Up}
+	leftkey={left Down}{left Up}
+	rightkey={right Down}{right Up}
+	Image1=..\img\k_enter.png
+	Image2=..\img\k_enterover.png
+
+
+#ControlOffset:0, 50 ;----------------- ROW 5 -------------------
+
+#Control:Key
+	Name=0
+	Pos=0, 0, 100, 50
+	Downkey={0}
+	Upkey=
+	Image1=..\img\k_0.png
+	Image2=..\img\k_0over.png
+
+
+#Control:Key
+	Name=Period
+	Pos=100, 0, 50, 50
+	Downkey=.
+	Upkey=
+	Image1=..\img\k_dot.png
+	Image2=..\img\k_dotover.png
