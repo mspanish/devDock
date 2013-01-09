@@ -149,7 +149,7 @@ img {
   max-width: 739px;
   padding: 5px;
   margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
+  /*border: 1px solid #ebebeb;*/
 
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
@@ -427,5 +427,21 @@ Small Device Styles
     max-width: 480px;
     font-size: 11px;
   }
+
+}
+.logo {
+width: 197px;
+height: 149px;
+box-shadow: none;
+float: left;
+margin-right: 25px;
+margin-left:-15px;
+margin-top:-15px;
+}
+
+.twitter-follow-button {
+position: absolute;
+right: 10px;
+top: 85px;
 
 }
